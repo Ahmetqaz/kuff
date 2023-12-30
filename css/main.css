@@ -352,6 +352,7 @@ svg {
 }
 .input textarea {
   min-height: 74px;
+  line-height: 1.5em;
 }
 .input--opacity input::-webkit-input-placeholder {
   color: #D6D6D6;
