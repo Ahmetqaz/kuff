@@ -1,0 +1,33 @@
+.container {
+  padding: 46px 28px;
+  &__inner {
+    box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.03);
+  }
+  &__header {
+    background: $black-secondary;
+    padding: 26px 27px 17px;
+    border-radius: 12px 12px 0 0;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    h5 {
+      color: $primary;
+    }
+    .tooltip {
+    }
+    .button {
+      .ico {
+        color: $white;
+      }
+    }
+  }
+  &__content {
+    padding: 46px 28px;
+    background: $white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    border-radius: 0 0 12px 12px;
+  }
+}
