@@ -50,11 +50,6 @@
           width: calc(50% - 7px);
         }
       }
-      textarea {
-        &::-webkit-scrollbar {
-          display: none;
-        }
-      }
     }
   }
   &__footer {
@@ -80,6 +75,13 @@
       display: flex;
       justify-content: space-between;
       gap: 20px;
+    }
+  }
+  .input {
+    textarea {
+      &::-webkit-scrollbar {
+        display: none;
+      }
     }
   }
 }

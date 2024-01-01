@@ -1411,9 +1411,6 @@ svg {
 .form__row .input__wrapper._lg {
   width: calc(50% - 7px);
 }
-.form__row .input textarea::-webkit-scrollbar {
-  display: none;
-}
 .form__footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1448,6 +1445,9 @@ svg {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 20px;
+}
+.form .input textarea::-webkit-scrollbar {
+  display: none;
 }
 
 @media (max-width: 1280px) {
