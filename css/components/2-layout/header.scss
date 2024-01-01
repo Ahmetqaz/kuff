@@ -190,6 +190,7 @@
 @mixin header-1160 {
   .header {
     padding: 15px 0;
+    z-index: 7;
     &__inner {
       .burger {
         display: block;
@@ -212,7 +213,6 @@
     padding: unset;
     pointer-events: none;
     transition: all 0s ease 0.25s, opacity 0.2s ease-in-out 0s;
-
     &__inner {
       padding: 30px 0 22px;
       position: absolute;
