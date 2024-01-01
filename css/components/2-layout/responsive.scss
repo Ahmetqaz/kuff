@@ -1,31 +1,29 @@
 @media (max-width: 1280px) {
+  @include container-1280;
 }
 @media (max-width: 1160px) {
-  .autoContainer {
-    padding: 0 40px;
-  }
+  @include typography-1160;
+  @include components-1160;
+  @include header-1160;
+  @include layouts-1160;
 }
 @media (max-width: 1025px) {
-  .autoContainer {
-    padding: 0 30px;
-  }
-  @include header-1025;
 }
-
 @media (max-width: 940px) {
-  .autoContainer {
-    padding: 0 25px;
-  }
+  @include typography-940;
+  @include container-940;
+  @include layouts-940;
+}
+@media (max-width: 860px) {
+  @include layouts-860;
 }
 @media (max-width: 768px) {
-  .autoContainer {
-    padding: 0 15px;
-  }
 }
 @media (max-width: 580px) {
-  ._hideMob {
-    display: none;
-  }
+  @include typography-580;
+  @include container-580;
+  @include layouts-580;
 }
 @media (max-width: 460px) {
+  @include layouts-460;
 }

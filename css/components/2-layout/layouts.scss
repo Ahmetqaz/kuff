@@ -1,0 +1,172 @@
+.welcome {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+  padding: 76px 0 30px;
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+    max-width: 810px;
+    margin: 0 auto;
+  }
+  &__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto 8px;
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+  &__group {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+}
+.form {
+  padding: 38px 0 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  &__row {
+    display: flex;
+    gap: 14px;
+    &._space {
+      margin: 6px 0 2px;
+      &Lg {
+        margin-bottom: 18px;
+      }
+    }
+    .input {
+      &__wrapper {
+        width: calc(25% - 7px);
+        &._lg {
+          width: calc(50% - 7px);
+        }
+      }
+      textarea {
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+    }
+  }
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    p {
+      font-weight: 600;
+    }
+    .button {
+      &--primary {
+        min-width: 146px;
+        padding: 0.9em 1.5em;
+        justify-content: flex-end;
+        gap: 17px;
+        .ico {
+          position: unset;
+          transform: unset;
+        }
+      }
+    }
+    &-group {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+  }
+}
+
+@mixin layouts-1160 {
+  .welcome {
+    padding: 50px 0 30px;
+  }
+}
+@mixin layouts-940 {
+  .welcome {
+    padding: 30px 0 30px;
+    gap: 40px;
+    &__box {
+      gap: 18px;
+    }
+  }
+  .form {
+    padding: 30px 0;
+  }
+}
+@mixin layouts-860 {
+  .form {
+    gap: 20px;
+    &__row {
+      flex-wrap: wrap;
+      gap: 20px 14px;
+      .input {
+        &__wrapper {
+          width: calc(50% - 14px);
+          &._lg {
+            width: 100%;
+          }
+        }
+      }
+      &._space {
+        margin: 0;
+        &Lg {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+@mixin layouts-580 {
+  .welcome {
+    &__group {
+      gap: 20px;
+      .button {
+        font-size: 14px;
+        min-width: 172px;
+      }
+    }
+  }
+  .form {
+    &__row {
+      .input {
+        &__wrapper {
+          width: 100%;
+        }
+      }
+    }
+    &__footer {
+      .button {
+        font-size: 14px;
+      }
+    }
+  }
+}
+@mixin layouts-460 {
+  .welcome {
+    &__group {
+      flex-direction: column;
+    }
+  }
+  .form {
+    &__footer {
+      &-group {
+        flex-direction: column;
+        gap: 16px;
+      }
+      .button {
+        justify-content: center;
+        &--primary {
+          padding: 0.9em 1.5em 0.9em 2.2em;
+        }
+      }
+    }
+  }
+}

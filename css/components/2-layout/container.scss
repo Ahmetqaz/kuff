@@ -13,8 +13,6 @@
     h5 {
       color: $primary;
     }
-    .tooltip {
-    }
     .button {
       .ico {
         color: $white;
@@ -22,12 +20,38 @@
     }
   }
   &__content {
-    padding: 46px 28px;
+    padding: 0 28px;
     background: $white;
-    display: flex;
-    flex-direction: column;
     gap: 20px;
-    align-items: flex-start;
     border-radius: 0 0 12px 12px;
+  }
+}
+
+@mixin container-1280 {
+  .container {
+    padding: 30px 26px;
+  }
+}
+@mixin container-940 {
+  .container {
+    padding: 26px 20px;
+    &__header {
+      padding: 24px 20px 15px;
+    }
+    &__content {
+      padding: 0 20px;
+    }
+  }
+}
+
+@mixin container-580 {
+  .container {
+    padding: 20px 16px;
+    &__header {
+      padding: 20px 16px 14px;
+    }
+    &__content {
+      padding: 0 16px;
+    }
   }
 }

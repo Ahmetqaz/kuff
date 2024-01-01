@@ -32,8 +32,83 @@ h6 {
 }
 
 p {
+  line-height: 1.6em;
   &._lg {
     font-size: 20px;
+    line-height: 1.4em;
   }
-  line-height: 1.6em;
+}
+
+@mixin typography-1160 {
+  h1 {
+    font-size: 46px;
+  }
+  h2 {
+    font-size: 44px;
+    &._sm {
+      font-size: 36px;
+    }
+  }
+  h3 {
+    font-size: 28px;
+  }
+  p {
+    &._lg {
+      font-size: 18px;
+    }
+  }
+}
+
+@mixin typography-940 {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 38px;
+    &._sm {
+      font-size: 30px;
+    }
+  }
+  h3 {
+    font-size: 24px;
+  }
+  h4 {
+    font-size: 22px;
+  }
+  h5 {
+    font-size: 18px;
+  }
+  p {
+    &._lg {
+      font-size: 16px;
+    }
+  }
+}
+@mixin typography-580 {
+  h1 {
+    font-size: 34px;
+  }
+  h2 {
+    font-size: 30px;
+    &._sm {
+      font-size: 26px;
+    }
+  }
+  h3 {
+    font-size: 22px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  h5 {
+    font-size: 16px;
+  }
+  h6 {
+    font-size: 14px;
+  }
+  p {
+    &._lg {
+      font-size: 14px;
+    }
+  }
 }
