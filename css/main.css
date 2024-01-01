@@ -1494,9 +1494,9 @@ svg {
     top: 71px;
     height: calc(100% - 71px);
     width: 100%;
-    background: rgba(0, 0, 0, 0.3);
-    -webkit-backdrop-filter: blur(4px);
-            backdrop-filter: blur(4px);
+    background: rgba(204, 204, 204, 0.5);
+    -webkit-backdrop-filter: blur(6.5px);
+            backdrop-filter: blur(6.5px);
     padding: unset;
     pointer-events: none;
     -webkit-transition: all 0s ease 0.25s, opacity 0.2s ease-in-out 0s;

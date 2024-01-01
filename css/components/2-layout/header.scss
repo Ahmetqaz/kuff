@@ -207,11 +207,12 @@
     top: 71px;
     height: calc(100% - 71px);
     width: 100%;
-    background: rgba($black, 0.3);
-    backdrop-filter: blur(4px);
+    background: rgba(204, 204, 204, 0.5);
+    backdrop-filter: blur(6.5px);
     padding: unset;
     pointer-events: none;
     transition: all 0s ease 0.25s, opacity 0.2s ease-in-out 0s;
+
     &__inner {
       padding: 30px 0 22px;
       position: absolute;
