@@ -45,6 +45,21 @@
     gap: 20px;
     border-radius: 0 0 12px 12px;
   }
+  &--lg {
+    min-height: calc(100vh - 71px);
+    display: flex;
+    flex-direction: column;
+    .container {
+      &__inner {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+      &__content {
+        flex: 1;
+      }
+    }
+  }
 }
 
 @mixin container-1280 {
@@ -83,8 +98,8 @@
       .tooltip {
         &__content {
           max-width: 380px;
-          &._sm{
-          max-width: 380px;
+          &._sm {
+            max-width: 380px;
           }
         }
       }
@@ -139,7 +154,7 @@
           &-shape {
             right: 27px;
           }
-          &._sm{
+          &._sm {
             max-width: 300px;
           }
         }
