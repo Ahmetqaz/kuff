@@ -18,6 +18,7 @@
   @include layouts-860;
 }
 @media (max-width: 768px) {
+  @include container-768;
 }
 @media (max-width: 580px) {
   @include typography-580;
@@ -25,5 +26,6 @@
   @include layouts-580;
 }
 @media (max-width: 460px) {
+  @include container-460;
   @include layouts-460;
 }

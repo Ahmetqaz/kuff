@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css" />
+  <!-- <link rel="icon" href="images/logo-small.svg" /> -->
+  <title>Home</title>
+</head>
+
+<body>
+  <div class="main">
+    <!-- #header -->
+    <header class="header" id="header">
+      <div class="autoContainer">
+        <div class="header__inner">
+          <a href="#" class="logo">
+            <img src="./images/logo.svg" alt="logo">
+          </a>
+          <div class="input input--select _language">
+            <input type="hidden">
+            <div class="input__container">
+              <div class="input__selected">
+                <div class="input__image">
+                </div>
+              </div>
+              <span class="ico">
+                <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M9.61886 0C10.038 0 10.2711 0.484796 10.0094 0.812207L5.71985 6.17812C5.51969 6.42851 5.13892 6.42851 4.93876 6.17812L0.649204 0.812207C0.38747 0.484796 0.620583 0 1.03975 0L9.61886 0Z"
+                    fill="currentCollor" />
+                </svg>
+              </span>
+            </div>
+            <ul class="input__dropdown">
+              <li class="input__dropdown-item" data-default data-value="en">
+                <div class="input__image">
+                  <img src="./images/language/en.png" alt="en">
+                </div>
+              </li>
+              <li class="input__dropdown-item" data-value="sp">
+                <div class="input__image">
+                  <img src="./images/language/sp.png" alt="sp">
+                </div>
+              </li>
+              <li class="input__dropdown-item" data-value="sp">
+                <div class="input__image">
+                  <img src="./images/language/sp.png" alt="sp">
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="burger" id="menuBtn">
+            <span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- #header end-->
+    <!-- #sidebar -->
+    <sidebar class="sidebar" id="menu">
+      <div class="sidebar__inner">
+        <div class="sidebar__inner-header">
+          <a href="#" class="logo">
+            <img src="./images/logo.svg" alt="logo">
+          </a>
+        </div>
+        <div class="sidebar__inner-group">
+          <a href="#" class="sidebar__link active">
+            <span>
+              1.
+            </span>
+            <span>
+              Startup information
+            </span>
+          </a>
+          <a href="#" class="sidebar__link">
+            <span>
+              2.
+            </span>
+            <span>
+              Matching
+            </span>
+          </a>
+          <a href="#" class="sidebar__link">
+            <span>
+              3.
+            </span>
+            <span>
+              Listado de inversores
+            </span>
+          </a>
+        </div>
+        <div class="sidebar__footer">
+          <div class="sidebar__footer-text">
+            Powered by
+          </div>
+          <div class="sidebar__footer-logo">
+            <img src="./images/sidebar-logo.svg" alt="logo">
+          </div>
+        </div>
+      </div>
+    </sidebar>
+    <!-- #sidebar end -->
+    <!-- #wrapper start-->
+    <div class="wrapper">
+      <!-- #upload -->
+      <section class="container">
+        <div class="container__inner">
+          <div class="container__header">
+            <button class="button button--ico">
+              <span class="ico">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7 12V3.85L4.4 6.45L3 5L8 0L13 5L11.6 6.45L9 3.85V12H7ZM0 16V11H2V14H14V11H16V16H0Z"
+                    fill="currentCollor"></path>
+                </svg>
+              </span>
+            </button>
+            <h5>
+              Subir deck
+            </h5>
+            <div class="tooltip">
+              <div class="tooltip__content _sm">
+                <p>We automatically extract the information necessary to match with investors</p>
+                <span class="tooltip__content-shape">
+                  <img src="./images/icons/tooltip-shape.svg" alt="shape">
+                </span>
+              </div>
+              <button class="button button--ico tooltip__button">
+                <span class="ico">
+                  <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M11.7115 15.75C11.7115 15.9896 11.6405 16.2239 11.5074 16.4231C11.3742 16.6223 11.185 16.7776 10.9636 16.8693C10.7423 16.961 10.4987 16.985 10.2636 16.9383C10.0286 16.8915 9.81275 16.7761 9.64332 16.6067C9.47388 16.4372 9.35849 16.2214 9.31174 15.9864C9.265 15.7513 9.28899 15.5077 9.38069 15.2864C9.47239 15.065 9.62767 14.8758 9.82691 14.7426C10.0261 14.6095 10.2604 14.5385 10.5 14.5385C10.8213 14.5385 11.1295 14.6661 11.3567 14.8933C11.5839 15.1205 11.7115 15.4287 11.7115 15.75ZM10.5 4.84615C8.27279 4.84615 6.46154 6.47668 6.46154 8.48077V8.88461C6.46154 9.09883 6.54664 9.30427 6.69811 9.45574C6.84958 9.60721 7.05502 9.69231 7.26923 9.69231C7.48345 9.69231 7.68889 9.60721 7.84036 9.45574C7.99183 9.30427 8.07693 9.09883 8.07693 8.88461V8.48077C8.07693 7.37019 9.16428 6.46154 10.5 6.46154C11.8357 6.46154 12.9231 7.37019 12.9231 8.48077C12.9231 9.59134 11.8357 10.5 10.5 10.5C10.2858 10.5 10.0803 10.5851 9.92888 10.7366C9.77741 10.888 9.69231 11.0935 9.69231 11.3077V12.1154C9.69231 12.3296 9.77741 12.535 9.92888 12.6865C10.0803 12.838 10.2858 12.9231 10.5 12.9231C10.7142 12.9231 10.9197 12.838 11.0711 12.6865C11.2226 12.535 11.3077 12.3296 11.3077 12.1154V12.0427C13.1492 11.7045 14.5385 10.2355 14.5385 8.48077C14.5385 6.47668 12.7272 4.84615 10.5 4.84615ZM21 10.5C21 12.5767 20.3842 14.6068 19.2304 16.3335C18.0767 18.0602 16.4368 19.406 14.5182 20.2007C12.5996 20.9954 10.4884 21.2034 8.45155 20.7982C6.41475 20.3931 4.54383 19.3931 3.07538 17.9246C1.60693 16.4562 0.606904 14.5852 0.201759 12.5484C-0.203385 10.5116 0.00454949 8.40045 0.799269 6.48182C1.59399 4.5632 2.9398 2.92332 4.66652 1.76957C6.39323 0.615814 8.4233 0 10.5 0C13.2839 0.00293982 15.9529 1.11013 17.9214 3.07862C19.8899 5.04712 20.9971 7.71613 21 10.5ZM19.3846 10.5C19.3846 8.74279 18.8635 7.02504 17.8873 5.56397C16.911 4.1029 15.5234 2.96414 13.9 2.29169C12.2765 1.61923 10.4901 1.44328 8.7667 1.7861C7.04325 2.12891 5.46017 2.97509 4.21763 4.21763C2.9751 5.46016 2.12892 7.04325 1.7861 8.7667C1.44329 10.4901 1.61923 12.2765 2.29169 13.9C2.96414 15.5234 4.10291 16.911 5.56398 17.8873C7.02504 18.8635 8.74279 19.3846 10.5 19.3846C12.8555 19.3819 15.1138 18.445 16.7794 16.7794C18.445 15.1138 19.3819 12.8555 19.3846 10.5Z"
+                      fill="currentCollor"></path>
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+          <div class="container__content">
+            <div class="upload upload--sm">
+              <h4>
+                Descubre inversores que realmente encajan con el perfil y necesidades de tu startup.
+              </h4>
+              <div class="upload__file">
+                <div class="input input--file">
+                  <input type="file">
+                  <span class="input__image">
+                    <img src="./images/icons/file.svg" alt="file">
+                  </span>
+                </div>
+              </div>
+              <div class="upload__group">
+                <button class="button button--primary _icoLeft">
+                  <span>
+                    buscar archivo
+                  </span>
+                  <span class="ico">
+                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M23.1811 25.3158L14.5722 16.6947C13.8889 17.2421 13.1032 17.6754 12.215 17.9947C11.3268 18.314 10.3816 18.4737 9.37951 18.4737C6.89705 18.4737 4.7963 17.6125 3.07725 15.8901C1.3582 14.1677 0.498225 12.064 0.497314 9.57894C0.497314 7.09298 1.35729 4.98926 3.07725 3.26778C4.79721 1.54631 6.89796 0.685116 9.37951 0.684204C11.862 0.684204 13.9632 1.5454 15.6831 3.26778C17.4031 4.99017 18.2626 7.09389 18.2617 9.57894C18.2617 10.5824 18.1023 11.5289 17.7834 12.4184C17.4646 13.3079 17.0319 14.0947 16.4853 14.7789L25.0942 23.4L23.1811 25.3158ZM9.37951 15.7368C11.0876 15.7368 12.5398 15.1384 13.7359 13.9415C14.932 12.7446 15.5296 11.2904 15.5287 9.57894C15.5287 7.86841 14.9311 6.4147 13.7359 5.21778C12.5407 4.02087 11.0885 3.42196 9.37951 3.42105C7.6714 3.42105 6.21973 4.01996 5.0245 5.21778C3.82928 6.41561 3.23121 7.86933 3.2303 9.57894C3.2303 11.2895 3.82837 12.7436 5.0245 13.9415C6.22064 15.1393 7.67231 15.7377 9.37951 15.7368Z"
+                        fill="currentCollor"></path>
+                    </svg>
+                  </span>
+                </button>
+                <div class="upload__group-box">
+                  <span>
+                    No tengo deck, </span>
+                  <div class="upload__group-buttons">
+                    <a href="#" class="text--underline">
+                      añadir información manualmente
+                    </a>
+                    <button class="button button--ico">
+                      <span class="ico">
+                        <svg width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M12.7382 18.7214C12.6491 18.6332 12.5784 18.5284 12.5302 18.4131C12.482 18.2978 12.4572 18.1742 12.4572 18.0493C12.4572 17.9245 12.482 17.8009 12.5302 17.6855C12.5784 17.5702 12.6491 17.4655 12.7382 17.3772L19.7278 10.4498L0.958301 10.4498C0.704143 10.4498 0.460395 10.3497 0.280679 10.1716C0.100963 9.99345 -4.26266e-07 9.75183 -4.15253e-07 9.49989C-4.04241e-07 9.24795 0.100963 9.00633 0.280679 8.82818C0.460395 8.65004 0.704143 8.54995 0.958301 8.54995L19.7278 8.54996L12.7382 1.62254C12.5584 1.4443 12.4574 1.20254 12.4574 0.950464C12.4574 0.698385 12.5584 0.456631 12.7382 0.278384C12.918 0.100137 13.1619 -4.28158e-07 13.4162 -4.1892e-07C13.6705 -4.09682e-07 13.9144 0.100137 14.0942 0.278384L22.7189 8.82781C22.808 8.91603 22.8787 9.0208 22.927 9.13612C22.9752 9.25144 23 9.37506 23 9.49989C23 9.62473 22.9752 9.74834 22.927 9.86366C22.8787 9.97898 22.808 10.0837 22.7189 10.172L14.0942 18.7214C14.0052 18.8097 13.8995 18.8798 13.7832 18.9276C13.6669 18.9754 13.5422 19 13.4162 19C13.2903 19 13.1656 18.9754 13.0493 18.9276C12.9329 18.8798 12.8272 18.8097 12.7382 18.7214Z"
+                            fill="currentCollor" />
+                        </svg>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- #upload end -->
+    </div>
+    <!-- #wrapper end-->
+    <!-- #popUp start-->
+    <div class="popUp active">
+      <div class="popUp__inner">
+        <div class="popUp__inner-content">
+          <button class="button button--ico">
+            <span class="ico ico--stroke">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M15 15L1 1M15 1L1 15" stroke="currentCollor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </span>
+          </button>
+          <h3>
+            Selecting the most suitable investors
+          </h3>
+          <p>
+            In the next few seconds you will find a list of investors that match your profile and financing requirements
+          </p>
+          <div class="popUp__inner-image">
+            <img src="./images/welcome.svg" alt="welcome">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- #popUp end-->
+
+  </div>
+  <script src="js/main.js"></script>
+  <script src="js/customSelect.js"></script>
+</body>
+
+</html>

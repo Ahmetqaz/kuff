@@ -14,8 +14,28 @@
       color: $primary;
     }
     .button {
-      .ico {
-        color: $white;
+      &--ico {
+        width: 16px;
+        height: 16px;
+        border: unset;
+        .ico {
+          color: $white;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .tooltip {
+      &__content {
+        &._sm {
+          max-width: 414px;
+        }
+      }
+      .button {
+        &--ico {
+          width: 21px;
+          height: 21px;
+        }
       }
     }
   }
@@ -37,21 +57,93 @@
     padding: 26px 20px;
     &__header {
       padding: 24px 20px 15px;
+      .tooltip {
+        &__content {
+          &._sm {
+            transform: translateX(-30%);
+            .tooltip {
+              &__content {
+                &-shape {
+                  left: 30%;
+                }
+              }
+            }
+          }
+        }
+      }
     }
     &__content {
       padding: 0 20px;
     }
   }
 }
-
+@mixin container-768 {
+  .container {
+    &__header {
+      .tooltip {
+        &__content {
+          max-width: 380px;
+          &._sm{
+          max-width: 380px;
+          }
+        }
+      }
+    }
+  }
+}
 @mixin container-580 {
   .container {
     padding: 20px 16px;
     &__header {
       padding: 20px 16px 14px;
+      .tooltip {
+        &__content {
+          transform: unset;
+          left: unset;
+          right: -140px;
+          &-shape {
+            left: unset;
+            transform: unset;
+            right: 137px;
+          }
+          &._sm {
+            transform: unset;
+            right: unset;
+            left: -150px;
+            .tooltip {
+              &__content {
+                &-shape {
+                  transform: unset;
+                  left: 147px;
+                }
+              }
+            }
+          }
+        }
+      }
     }
     &__content {
       padding: 0 16px;
+    }
+  }
+}
+@mixin container-460 {
+  .container {
+    &__header {
+      .tooltip {
+        &__content {
+          max-width: 300px;
+          right: -30px;
+          font-size: 12px;
+          border-radius: 6px;
+          &-shape {
+            right: 27px;
+          }
+          &._sm{
+            max-width: 300px;
+          }
+        }
+      }
     }
   }
 }

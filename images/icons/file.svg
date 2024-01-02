@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_2" data-name="Слой 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 106.62 87.23">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #1b2d51;
+      }
+
+      .cls-3 {
+        fill: #f7f9fc;
+      }
+
+      .cls-4 {
+        mask: url(#mask-1);
+      }
+
+      .cls-5 {
+        mask: url(#mask);
+      }
+    </style>
+    <mask id="mask" x="0" y="0" width="106.62" height="87.24" maskUnits="userSpaceOnUse">
+      <g id="mask0_212_2" data-name="mask0 212 2">
+        <path class="cls-1" d="m106.62,0H0v87.23h106.62V0Z"/>
+      </g>
+    </mask>
+    <mask id="mask-1" x="33.15" y="33.28" width="41.32" height="62.24" maskUnits="userSpaceOnUse">
+      <g id="mask1_212_2" data-name="mask1 212 2">
+        <path class="cls-1" d="m33.15,33.28v62.24h41.32v-62.24h-41.32Z"/>
+      </g>
+    </mask>
+  </defs>
+  <g id="_Слой_1-2" data-name="Слой 1">
+    <g>
+      <g class="cls-5">
+        <g>
+          <path class="cls-2" d="m94.91,76.6H0V10.35c0-2.18,1.77-3.94,3.94-3.94h90.97v70.19Z"/>
+          <path class="cls-2" d="m66.95,10.93v7.23H14.15c-7.81,0-14.15,6.33-14.15,14.15v46.57c0,4.62,3.74,8.36,8.36,8.36h89.9c4.62,0,8.36-3.74,8.36-8.36V10.93c0-6.04-4.89-10.93-10.93-10.93h-17.81c-6.04,0-10.93,4.89-10.93,10.93Z"/>
+        </g>
+      </g>
+      <g class="cls-4">
+        <path class="cls-3" d="m42.94,87.23c.09-9.78,1.78-25.53.22-26.46-2.22-1.32-9.1,2.2-9.99-.44-.89-2.64,17.97-27.27,20.64-27.05,2.66.22,21.3,23.09,20.64,26.83-.67,3.74-9.99-.88-11.32.44-.97.97.55,17.24.56,26.68"/>
+      </g>
+    </g>
+  </g>
+</svg>
