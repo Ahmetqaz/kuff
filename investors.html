@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css" />
+  <!-- <link rel="icon" href="images/logo-small.svg" /> -->
+  <title>Home</title>
+</head>
+
+<body>
+  <div class="main">
+    <!-- #header -->
+    <header class="header" id="header">
+      <div class="autoContainer">
+        <div class="header__inner">
+          <a href="#" class="logo">
+            <img src="./images/logo.svg" alt="logo">
+          </a>
+          <div class="input input--select _language">
+            <input type="hidden">
+            <div class="input__container">
+              <div class="input__selected">
+                <div class="input__image">
+                </div>
+              </div>
+              <span class="ico">
+                <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M9.61886 0C10.038 0 10.2711 0.484796 10.0094 0.812207L5.71985 6.17812C5.51969 6.42851 5.13892 6.42851 4.93876 6.17812L0.649204 0.812207C0.38747 0.484796 0.620583 0 1.03975 0L9.61886 0Z"
+                    fill="currentCollor" />
+                </svg>
+              </span>
+            </div>
+            <ul class="input__dropdown">
+              <li class="input__dropdown-item" data-default data-value="en">
+                <div class="input__image">
+                  <img src="./images/language/en.png" alt="en">
+                </div>
+              </li>
+              <li class="input__dropdown-item" data-value="sp">
+                <div class="input__image">
+                  <img src="./images/language/sp.png" alt="sp">
+                </div>
+              </li>
+              <li class="input__dropdown-item" data-value="sp">
+                <div class="input__image">
+                  <img src="./images/language/sp.png" alt="sp">
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="burger" id="menuBtn">
+            <span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- #header end-->
+    <!-- #sidebar -->
+    <sidebar class="sidebar" id="menu">
+      <div class="sidebar__inner">
+        <div class="sidebar__inner-header">
+          <a href="#" class="logo">
+            <img src="./images/logo.svg" alt="logo">
+          </a>
+        </div>
+        <div class="sidebar__inner-group">
+          <a href="#" class="sidebar__link active">
+            <span>
+              1.
+            </span>
+            <span>
+              Startup information
+            </span>
+          </a>
+          <a href="#" class="sidebar__link">
+            <span>
+              2.
+            </span>
+            <span>
+              Matching
+            </span>
+          </a>
+          <a href="#" class="sidebar__link">
+            <span>
+              3.
+            </span>
+            <span>
+              Listado de inversores
+            </span>
+          </a>
+        </div>
+        <div class="sidebar__footer">
+          <div class="sidebar__footer-text">
+            Powered by
+          </div>
+          <div class="sidebar__footer-logo">
+            <img src="./images/sidebar-logo.svg" alt="logo">
+          </div>
+        </div>
+      </div>
+    </sidebar>
+    <!-- #sidebar end -->
+    <!-- #wrapper start-->
+    <div class="wrapper">
+      <!-- #investors -->
+      <section class="container">
+        <div class="container__inner">
+          <div class="container__header">
+            <h5>
+              List of investors
+            </h5>
+            <div class="tooltip">
+              <div class="tooltip__content _sm">
+                <p>List of investors that match your profile and financing requirements</p>
+                <span class="tooltip__content-shape">
+                  <img src="./images/icons/tooltip-shape.svg" alt="shape">
+                </span>
+              </div>
+              <button class="button button--ico tooltip__button">
+                <span class="ico">
+                  <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M11.7115 15.75C11.7115 15.9896 11.6405 16.2239 11.5074 16.4231C11.3742 16.6223 11.185 16.7776 10.9636 16.8693C10.7423 16.961 10.4987 16.985 10.2636 16.9383C10.0286 16.8915 9.81275 16.7761 9.64332 16.6067C9.47388 16.4372 9.35849 16.2214 9.31174 15.9864C9.265 15.7513 9.28899 15.5077 9.38069 15.2864C9.47239 15.065 9.62767 14.8758 9.82691 14.7426C10.0261 14.6095 10.2604 14.5385 10.5 14.5385C10.8213 14.5385 11.1295 14.6661 11.3567 14.8933C11.5839 15.1205 11.7115 15.4287 11.7115 15.75ZM10.5 4.84615C8.27279 4.84615 6.46154 6.47668 6.46154 8.48077V8.88461C6.46154 9.09883 6.54664 9.30427 6.69811 9.45574C6.84958 9.60721 7.05502 9.69231 7.26923 9.69231C7.48345 9.69231 7.68889 9.60721 7.84036 9.45574C7.99183 9.30427 8.07693 9.09883 8.07693 8.88461V8.48077C8.07693 7.37019 9.16428 6.46154 10.5 6.46154C11.8357 6.46154 12.9231 7.37019 12.9231 8.48077C12.9231 9.59134 11.8357 10.5 10.5 10.5C10.2858 10.5 10.0803 10.5851 9.92888 10.7366C9.77741 10.888 9.69231 11.0935 9.69231 11.3077V12.1154C9.69231 12.3296 9.77741 12.535 9.92888 12.6865C10.0803 12.838 10.2858 12.9231 10.5 12.9231C10.7142 12.9231 10.9197 12.838 11.0711 12.6865C11.2226 12.535 11.3077 12.3296 11.3077 12.1154V12.0427C13.1492 11.7045 14.5385 10.2355 14.5385 8.48077C14.5385 6.47668 12.7272 4.84615 10.5 4.84615ZM21 10.5C21 12.5767 20.3842 14.6068 19.2304 16.3335C18.0767 18.0602 16.4368 19.406 14.5182 20.2007C12.5996 20.9954 10.4884 21.2034 8.45155 20.7982C6.41475 20.3931 4.54383 19.3931 3.07538 17.9246C1.60693 16.4562 0.606904 14.5852 0.201759 12.5484C-0.203385 10.5116 0.00454949 8.40045 0.799269 6.48182C1.59399 4.5632 2.9398 2.92332 4.66652 1.76957C6.39323 0.615814 8.4233 0 10.5 0C13.2839 0.00293982 15.9529 1.11013 17.9214 3.07862C19.8899 5.04712 20.9971 7.71613 21 10.5ZM19.3846 10.5C19.3846 8.74279 18.8635 7.02504 17.8873 5.56397C16.911 4.1029 15.5234 2.96414 13.9 2.29169C12.2765 1.61923 10.4901 1.44328 8.7667 1.7861C7.04325 2.12891 5.46017 2.97509 4.21763 4.21763C2.9751 5.46016 2.12892 7.04325 1.7861 8.7667C1.44329 10.4901 1.61923 12.2765 2.29169 13.9C2.96414 15.5234 4.10291 16.911 5.56398 17.8873C7.02504 18.8635 8.74279 19.3846 10.5 19.3846C12.8555 19.3819 15.1138 18.445 16.7794 16.7794C18.445 15.1138 19.3819 12.8555 19.3846 10.5Z"
+                      fill="currentCollor"></path>
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+          <div class="container__content">
+            <div class="investors">
+              <div class="investors__info">
+                <h6>
+                  This is a list according to your startup:
+                </h6>
+                <div class="investors__info-row">
+                  <div class="investors__info-item">
+                    <div class="investors__info-text">
+                      <strong>
+                        Sector:
+                      </strong>
+                      <span>
+                        AI
+                      </span>
+                    </div>
+                    <div class="investors__info-text">
+                      <strong>
+                        Investment stage:
+                      </strong>
+                      <span>
+                        Pre-seed
+                      </span>
+                    </div>
+                  </div>
+                  <div class="investors__info-item">
+                    <div class="investors__info-text">
+                      <strong>
+                        Business model:
+                      </strong>
+                      <span>
+                        B2B
+                      </span>
+                    </div>
+                    <div class="investors__info-text">
+                      <strong>
+                        Location:
+                      </strong>
+                      <span>
+                        España
+                      </span>
+                    </div>
+                  </div>
+                  <div class="investors__info-item">
+                    <div class="investors__info-text">
+                      <strong>
+                        Desired financing:
+                      </strong>
+                      <span>
+                        400.000€
+                      </span>
+                    </div>
+                    <div class="investors__info-text">
+                      <strong>
+                        Pre-money valuation:
+                      </strong>
+                      <span>
+                        2.000.000€
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="investors__group">
+                <div class="investors__group-text">
+                  <span class="ico">
+                    <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M11.0011 16.88C11.0411 17.18 10.9411 17.5 10.7111 17.71C10.6186 17.8027 10.5087 17.8762 10.3877 17.9264C10.2668 17.9766 10.1371 18.0024 10.0061 18.0024C9.87514 18.0024 9.74546 17.9766 9.62448 17.9264C9.50351 17.8762 9.39362 17.8027 9.30111 17.71L5.29111 13.7C5.18204 13.5934 5.09911 13.463 5.04881 13.319C4.9985 13.175 4.98217 13.0213 5.00111 12.87V7.75L0.211108 1.62C0.0487158 1.41153 -0.0245586 1.14726 0.00729555 0.88493C0.0391497 0.622602 0.173543 0.383546 0.381108 0.22C0.571108 0.08 0.781108 0 1.00111 0H15.0011C15.2211 0 15.4311 0.08 15.6211 0.22C15.8287 0.383546 15.9631 0.622602 15.9949 0.88493C16.0268 1.14726 15.9535 1.41153 15.7911 1.62L11.0011 7.75V16.88ZM3.04111 2L7.00111 7.06V12.58L9.00111 14.58V7.05L12.9611 2H3.04111Z"
+                        fill="currentCollor" />
+                    </svg>
+                  </span>
+                  <span>
+                    Filter by:
+                  </span>
+                </div>
+                <div class="investors__group-box">
+                  <div class="input input--select">
+                    <input type="hidden">
+                    <div class="input__container">
+                      <div class="input__selected">
+
+                      </div>
+                      <span class="ico">
+                        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M6.90498 7.81106L12.8455 1.02225C12.9447 0.908977 13 0.758483 13 0.601985C13 0.445487 12.9447 0.294995 12.8455 0.18172L12.8388 0.174411C12.7907 0.119307 12.7328 0.0754294 12.6687 0.0454459C12.6046 0.0154624 12.5355 4.76837e-07 12.4657 4.76837e-07C12.3959 4.76837e-07 12.3268 0.0154624 12.2627 0.0454459C12.1985 0.0754294 12.1407 0.119307 12.0926 0.174411L6.49888 6.56732L0.907407 0.174411C0.859331 0.119307 0.801462 0.0754294 0.737322 0.0454459C0.673181 0.0154624 0.604109 4.76837e-07 0.534307 4.76837e-07C0.464505 4.76837e-07 0.395432 0.0154624 0.331292 0.0454459C0.267151 0.0754294 0.209282 0.119307 0.161206 0.174411L0.154493 0.18172C0.0553226 0.294995 0 0.445487 0 0.601985C0 0.758483 0.0553226 0.908977 0.154493 1.02225L6.09502 7.81106C6.14726 7.87077 6.21009 7.9183 6.2797 7.95078C6.34932 7.98325 6.42427 8 6.5 8C6.57574 8 6.65068 7.98325 6.7203 7.95078C6.78991 7.9183 6.85274 7.87077 6.90498 7.81106Z"
+                            fill="currentCollor" />
+                        </svg>
+                      </span>
+                    </div>
+                    <ul class="input__dropdown">
+                      <li class="input__dropdown-item" data-default data-value="all">
+                        <div class="input__text">
+                          <strong>
+                            Location:
+                          </strong>
+                          <span>
+                            All
+                          </span>
+                        </div>
+                      </li>
+                      <li class="input__dropdown-item" data-value="asiya">
+                        <div class="input__text">
+                          <strong>
+                            Location:
+                          </strong>
+                          <span>
+                            Asiya
+                          </span>
+                        </div>
+                      </li>
+                      <li class="input__dropdown-item" data-value="europe">
+                        <div class="input__text">
+                          <strong>
+                            Location:
+                          </strong>
+                          <span>
+                            Europe
+                          </span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="input input--select _sm">
+                    <input type="hidden">
+                    <div class="input__container">
+                      <div class="input__selected">
+                      </div>
+                      <span class="ico">
+                        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M6.90498 7.81106L12.8455 1.02225C12.9447 0.908977 13 0.758483 13 0.601985C13 0.445487 12.9447 0.294995 12.8455 0.18172L12.8388 0.174411C12.7907 0.119307 12.7328 0.0754294 12.6687 0.0454459C12.6046 0.0154624 12.5355 4.76837e-07 12.4657 4.76837e-07C12.3959 4.76837e-07 12.3268 0.0154624 12.2627 0.0454459C12.1985 0.0754294 12.1407 0.119307 12.0926 0.174411L6.49888 6.56732L0.907407 0.174411C0.859331 0.119307 0.801462 0.0754294 0.737322 0.0454459C0.673181 0.0154624 0.604109 4.76837e-07 0.534307 4.76837e-07C0.464505 4.76837e-07 0.395432 0.0154624 0.331292 0.0454459C0.267151 0.0754294 0.209282 0.119307 0.161206 0.174411L0.154493 0.18172C0.0553226 0.294995 0 0.445487 0 0.601985C0 0.758483 0.0553226 0.908977 0.154493 1.02225L6.09502 7.81106C6.14726 7.87077 6.21009 7.9183 6.2797 7.95078C6.34932 7.98325 6.42427 8 6.5 8C6.57574 8 6.65068 7.98325 6.7203 7.95078C6.78991 7.9183 6.85274 7.87077 6.90498 7.81106Z"
+                            fill="currentCollor" />
+                        </svg>
+                      </span>
+                    </div>
+                    <ul class="input__dropdown">
+                      <li class="input__dropdown-item" data-default data-value="all">
+                        <div class="input__text">
+                          <strong>
+                            Type:
+                          </strong>
+                          <span>
+                            All
+                          </span>
+                        </div>
+                      </li>
+                      <li class="input__dropdown-item" data-value="Ticket">
+                        <div class="input__text">
+                          <strong>
+                            Type:
+                          </strong>
+                          <span>
+                            Ticket
+                          </span>
+                        </div>
+                      </li>
+                      <li class="input__dropdown-item" data-value="país">
+                        <div class="input__text">
+                          <strong>
+                            Type:
+                          </strong>
+                          <span>
+                            País
+                          </span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <button class="button button--primary _icoLeft">
+                  <span class="ico ico--stroke">
+                    <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1V5C10 5.26522 10.1054 5.51957 10.2929 5.70711C10.4804 5.89464 10.7348 6 11 6H15"
+                        stroke="currentCollor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M8 15V9M13 19H3C2.46957 19 1.96086 18.7893 1.58579 18.4142C1.21071 18.0391 1 17.5304 1 17V3C1 2.46957 1.21071 1.96086 1.58579 1.58579C1.96086 1.21071 2.46957 1 3 1H10L15 6V17C15 17.5304 14.7893 18.0391 14.4142 18.4142C14.0391 18.7893 13.5304 19 13 19Z"
+                        stroke="currentCollor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M5.5 12.5L8 15L10.5 12.5" stroke="currentCollor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                  <span>
+                    download list
+                  </span>
+                </button>
+              </div>
+              <div class="investors__list-wrapper">
+                <div class="investors__list">
+                  <div class="investors__list-row _header">
+                    <div class="investors__list-column">
+                      #
+                    </div>
+                    <div class="investors__list-column">
+                      Investor
+                    </div>
+                    <div class="investors__list-column">
+                      Match Score
+                    </div>
+                    <div class="investors__list-column">
+                      Top 3 reasons match parameters
+                    </div>
+                    <div class="investors__list-column">
+                      Match date
+                    </div>
+                    <div class="investors__list-column">
+                    </div>
+                  </div>
+                  <div class="investors__list-tab">
+                    <div class="investors__list-row tabBtn active" data-tab="#tab-1">
+                      <div class="investors__list-column">
+                        <strong>
+                          1
+                        </strong>
+                      </div>
+                      <div class="investors__list-column">
+                        <strong>
+                          Kima Ventures
+                        </strong>
+                      </div>
+                      <div class="investors__list-column">
+                        <span class="investors__list-text _lg">
+                          98
+                        </span>
+                      </div>
+                      <div class="investors__list-column">
+                        <span class="investors__list-text _blue">
+                          Industria
+                        </span>
+                        <span class="investors__list-text _yellow">
+                          País
+                        </span>
+                        <span class="investors__list-text _blueDark">
+                          Ticket
+                        </span>
+                      </div>
+                      <div class="investors__list-column">
+                        19-12-2023
+                      </div>
+                      <div class="investors__list-column">
+                        <button class="button button--ico">
+                          <span class="ico">
+                            <svg width="27" height="26" viewBox="0 0 27 26" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M7.87403 22.203L13.5009 18.7643L19.1278 22.2482L17.6541 15.7328L22.6111 11.3893L16.091 10.8011L13.5009 4.64764L10.9108 10.7558L4.39074 11.344L9.34774 15.7328L7.87403 22.203ZM5.14992 26L7.36494 16.3844L0 9.91967L9.70142 9.06905L13.5009 0L17.3004 9.06724L27 9.91786L19.6369 16.3826L21.8519 25.9982L13.5009 20.8945L5.14992 26Z"
+                                fill="currentCollor" />
+                            </svg>
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="investors__list-content tabEvent active" id="tab-1">
+                      <div class="investors__list-box">
+                        <h2>
+                          Kima Ventures
+                        </h2>
+                        <button class="button button--ico">
+                          <span class="ico">
+                            <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M23.7083 0.375C24.4819 0.375 25.2237 0.682291 25.7707 1.22927C26.3177 1.77625 26.625 2.51812 26.625 3.29167V23.7083C26.625 24.4819 26.3177 25.2237 25.7707 25.7707C25.2237 26.3177 24.4819 26.625 23.7083 26.625H3.29167C2.51812 26.625 1.77625 26.3177 1.22927 25.7707C0.682291 25.2237 0.375 24.4819 0.375 23.7083V3.29167C0.375 2.51812 0.682291 1.77625 1.22927 1.22927C1.77625 0.682291 2.51812 0.375 3.29167 0.375H23.7083ZM22.9792 22.9792V15.25C22.9792 13.9891 22.4783 12.7799 21.5867 11.8883C20.6951 10.9967 19.4859 10.4958 18.225 10.4958C16.9854 10.4958 15.5417 11.2542 14.8417 12.3917V10.7729H10.7729V22.9792H14.8417V15.7896C14.8417 14.6667 15.7458 13.7479 16.8688 13.7479C17.4102 13.7479 17.9295 13.963 18.3124 14.3459C18.6953 14.7288 18.9104 15.2481 18.9104 15.7896V22.9792H22.9792ZM6.03333 8.48333C6.68311 8.48333 7.30628 8.22521 7.76575 7.76575C8.22521 7.30628 8.48333 6.68311 8.48333 6.03333C8.48333 4.67708 7.38958 3.56875 6.03333 3.56875C5.37969 3.56875 4.75281 3.82841 4.29061 4.29061C3.82841 4.75281 3.56875 5.37969 3.56875 6.03333C3.56875 7.38958 4.67708 8.48333 6.03333 8.48333ZM8.06042 22.9792V10.7729H4.02083V22.9792H8.06042Z"
+                                fill="currentCollor" />
+                            </svg>
+                          </span>
+                        </button>
+                        <p>
+                          Kima Ventures focuses on late seed and series A of Spanish companies with a technological
+                          base.
+                        </p>
+                      </div>
+                      <div class="investors__list-group">
+                        <button class="investors__list-button">
+                          <span class="ico">
+                            <svg width="18" height="22" viewBox="0 0 18 22" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M8.64293 12.5714C7.86593 12.5714 7.10638 12.341 6.46033 11.9093C5.81428 11.4776 5.31075 10.8641 5.0134 10.1462C4.71606 9.42835 4.63826 8.63845 4.78984 7.87638C4.94143 7.11431 5.31559 6.41431 5.86501 5.86489C6.41443 5.31547 7.11443 4.94131 7.8765 4.78972C8.63857 4.63814 9.42848 4.71594 10.1463 5.01328C10.8642 5.31062 11.4777 5.81416 11.9094 6.46021C12.3411 7.10626 12.5715 7.86581 12.5715 8.64281C12.5703 9.68435 12.156 10.6829 11.4195 11.4193C10.683 12.1558 9.68447 12.5701 8.64293 12.5714ZM8.64293 6.28566C8.17673 6.28566 7.721 6.42391 7.33337 6.68291C6.94574 6.94192 6.64362 7.31006 6.46521 7.74077C6.28681 8.17148 6.24013 8.64542 6.33108 9.10266C6.42203 9.5599 6.64652 9.97991 6.97618 10.3096C7.30583 10.6392 7.72583 10.8637 8.18307 10.9547C8.64031 11.0456 9.11426 10.9989 9.54497 10.8205C9.97568 10.6421 10.3438 10.34 10.6028 9.95237C10.8618 9.56474 11.0001 9.10901 11.0001 8.64281C10.9994 8.01785 10.7509 7.41866 10.309 6.97674C9.86708 6.53483 9.26789 6.28629 8.64293 6.28566Z"
+                                fill="currentCollor" />
+                              <path
+                                d="M8.64287 22L2.01458 14.1829C1.92248 14.0656 1.83133 13.9474 1.74115 13.8286C0.608922 12.3371 -0.00273522 10.5154 9.19512e-06 8.64286C9.19512e-06 6.35063 0.910594 4.15228 2.53144 2.53143C4.15229 0.910584 6.35064 0 8.64287 0C10.9351 0 13.1334 0.910584 14.7543 2.53143C16.3751 4.15228 17.2857 6.35063 17.2857 8.64286C17.2885 10.5145 16.6771 12.3354 15.5454 13.8262L15.5446 13.8286C15.5446 13.8286 15.3089 14.1381 15.2735 14.1798L8.64287 22ZM2.99594 12.8818C2.99594 12.8818 3.17901 13.1238 3.22065 13.1756L8.64287 19.5706L14.0722 13.167C14.1067 13.1238 14.2906 12.8802 14.2914 12.8794C15.2163 11.6609 15.7161 10.1727 15.7143 8.64286C15.7143 6.7674 14.9693 4.96875 13.6431 3.6426C12.317 2.31645 10.5183 1.57143 8.64287 1.57143C6.76741 1.57143 4.96876 2.31645 3.64261 3.6426C2.31646 4.96875 1.57144 6.7674 1.57144 8.64286C1.56979 10.1736 2.07019 11.6627 2.99594 12.8818Z"
+                                fill="currentCollor" />
+                            </svg>
+                          </span>
+                          <span>
+                            Spain
+                          </span>
+                        </button>
+                        <button class="investors__list-button">
+                          <span class="ico">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M14.36 12C14.44 11.34 14.5 10.68 14.5 10C14.5 9.32 14.44 8.66 14.36 8H17.74C17.9 8.64 18 9.31 18 10C18 10.69 17.9 11.36 17.74 12M12.59 17.56C13.19 16.45 13.65 15.25 13.97 14H16.92C15.9512 15.6683 14.4141 16.932 12.59 17.56ZM12.34 12H7.66C7.56 11.34 7.5 10.68 7.5 10C7.5 9.32 7.56 8.65 7.66 8H12.34C12.43 8.65 12.5 9.32 12.5 10C12.5 10.68 12.43 11.34 12.34 12ZM10 17.96C9.17 16.76 8.5 15.43 8.09 14H11.91C11.5 15.43 10.83 16.76 10 17.96ZM6 6H3.08C4.03886 4.32721 5.5748 3.06149 7.4 2.44C6.8 3.55 6.35 4.75 6 6ZM3.08 14H6C6.35 15.25 6.8 16.45 7.4 17.56C5.57862 16.9317 4.04485 15.6677 3.08 14ZM2.26 12C2.1 11.36 2 10.69 2 10C2 9.31 2.1 8.64 2.26 8H5.64C5.56 8.66 5.5 9.32 5.5 10C5.5 10.68 5.56 11.34 5.64 12M10 2.03C10.83 3.23 11.5 4.57 11.91 6H8.09C8.5 4.57 9.17 3.23 10 2.03ZM16.92 6H13.97C13.657 4.76146 13.1936 3.5659 12.59 2.44C14.43 3.07 15.96 4.34 16.92 6ZM10 0C4.47 0 0 4.5 0 10C0 12.6522 1.05357 15.1957 2.92893 17.0711C3.85752 17.9997 4.95991 18.7362 6.17317 19.2388C7.38642 19.7413 8.68678 20 10 20C12.6522 20 15.1957 18.9464 17.0711 17.0711C18.9464 15.1957 20 12.6522 20 10C20 8.68678 19.7413 7.38642 19.2388 6.17317C18.7362 4.95991 17.9997 3.85752 17.0711 2.92893C16.1425 2.00035 15.0401 1.26375 13.8268 0.761205C12.6136 0.258658 11.3132 0 10 0Z"
+                                fill="currentCollor" />
+                            </svg>
+                          </span>
+                          <span>
+                            backme@jme.vc
+                          </span>
+                        </button>
+                        <button class="investors__list-button">
+                          <span class="ico">
+                            <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M18 4C18.58 4 19.05 4.2 19.42 4.59C19.8 5 20 5.45 20 6V17C20 17.55 19.8 18 19.42 18.41C19.05 18.8 18.58 19 18 19H2C1.42 19 0.95 18.8 0.58 18.41C0.2 18 0 17.55 0 17V6C0 5.45 0.2 5 0.58 4.59C0.95 4.2 1.42 4 2 4H6V2C6 1.42 6.2 0.95 6.58 0.58C6.95 0.2 7.42 0 8 0H12C12.58 0 13.05 0.2 13.42 0.58C13.8 0.95 14 1.42 14 2V4H18ZM2 6V17H18V6H2ZM12 4V2H8V4H12Z"
+                                fill="currentCollor" />
+                            </svg>
+                          </span>
+                          <span>
+                            Venture Capital
+                          </span>
+                        </button>
+                      </div>
+                      <div class="investors__info-text">
+                        <strong>
+                          Invested startups:
+                        </strong>
+                        <span>
+                          Ida, MarketLeap, Verteego
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="investors__list-tab">
+                    <div class="investors__list-row tabBtn" data-tab="#tab-2">
+                      <div class="investors__list-column">
+                        <strong>
+                          2
+                        </strong>
+                      </div>
+                      <div class="investors__list-column">
+                        <strong>
+                          Inveready
+                        </strong>
+                      </div>
+                      <div class="investors__list-column">
+                        <span class="investors__list-text _lg">
+                          98
+                        </span>
+                      </div>
+                      <div class="investors__list-column">
+                        <span class="investors__list-text _blue">
+                          Industria
+                        </span>
+                        <span class="investors__list-text _yellow">
+                          País
+                        </span>
+                        <span class="investors__list-text _blueDark">
+                          Ticket
+                        </span>
+                      </div>
+                      <div class="investors__list-column">
+                        19-12-2023
+                      </div>
+                      <div class="investors__list-column">
+                        <button class="button button--ico">
+                          <span class="ico">
+                            <svg width="27" height="26" viewBox="0 0 27 26" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M7.87403 22.203L13.5009 18.7643L19.1278 22.2482L17.6541 15.7328L22.6111 11.3893L16.091 10.8011L13.5009 4.64764L10.9108 10.7558L4.39074 11.344L9.34774 15.7328L7.87403 22.203ZM5.14992 26L7.36494 16.3844L0 9.91967L9.70142 9.06905L13.5009 0L17.3004 9.06724L27 9.91786L19.6369 16.3826L21.8519 25.9982L13.5009 20.8945L5.14992 26Z"
+                                fill="currentCollor" />
+                            </svg>
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="investors__list-content tabEvent" id="tab-2">
+                      <div class="investors__list-box">
+                        <h2>
+                          Inveready
+                        </h2>
+                        <button class="button button--ico">
+                          <span class="ico">
+                            <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M23.7083 0.375C24.4819 0.375 25.2237 0.682291 25.7707 1.22927C26.3177 1.77625 26.625 2.51812 26.625 3.29167V23.7083C26.625 24.4819 26.3177 25.2237 25.7707 25.7707C25.2237 26.3177 24.4819 26.625 23.7083 26.625H3.29167C2.51812 26.625 1.77625 26.3177 1.22927 25.7707C0.682291 25.2237 0.375 24.4819 0.375 23.7083V3.29167C0.375 2.51812 0.682291 1.77625 1.22927 1.22927C1.77625 0.682291 2.51812 0.375 3.29167 0.375H23.7083ZM22.9792 22.9792V15.25C22.9792 13.9891 22.4783 12.7799 21.5867 11.8883C20.6951 10.9967 19.4859 10.4958 18.225 10.4958C16.9854 10.4958 15.5417 11.2542 14.8417 12.3917V10.7729H10.7729V22.9792H14.8417V15.7896C14.8417 14.6667 15.7458 13.7479 16.8688 13.7479C17.4102 13.7479 17.9295 13.963 18.3124 14.3459C18.6953 14.7288 18.9104 15.2481 18.9104 15.7896V22.9792H22.9792ZM6.03333 8.48333C6.68311 8.48333 7.30628 8.22521 7.76575 7.76575C8.22521 7.30628 8.48333 6.68311 8.48333 6.03333C8.48333 4.67708 7.38958 3.56875 6.03333 3.56875C5.37969 3.56875 4.75281 3.82841 4.29061 4.29061C3.82841 4.75281 3.56875 5.37969 3.56875 6.03333C3.56875 7.38958 4.67708 8.48333 6.03333 8.48333ZM8.06042 22.9792V10.7729H4.02083V22.9792H8.06042Z"
+                                fill="currentCollor" />
+                            </svg>
+                          </span>
+                        </button>
+                        <p>
+                          Kima Ventures focuses on late seed and series A of Spanish companies with a technological
+                          base.
+                        </p>
+                      </div>
+                      <div class="investors__list-group">
+                        <button class="investors__list-button">
+                          <span class="ico">
+                            <svg width="18" height="22" viewBox="0 0 18 22" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M8.64293 12.5714C7.86593 12.5714 7.10638 12.341 6.46033 11.9093C5.81428 11.4776 5.31075 10.8641 5.0134 10.1462C4.71606 9.42835 4.63826 8.63845 4.78984 7.87638C4.94143 7.11431 5.31559 6.41431 5.86501 5.86489C6.41443 5.31547 7.11443 4.94131 7.8765 4.78972C8.63857 4.63814 9.42848 4.71594 10.1463 5.01328C10.8642 5.31062 11.4777 5.81416 11.9094 6.46021C12.3411 7.10626 12.5715 7.86581 12.5715 8.64281C12.5703 9.68435 12.156 10.6829 11.4195 11.4193C10.683 12.1558 9.68447 12.5701 8.64293 12.5714ZM8.64293 6.28566C8.17673 6.28566 7.721 6.42391 7.33337 6.68291C6.94574 6.94192 6.64362 7.31006 6.46521 7.74077C6.28681 8.17148 6.24013 8.64542 6.33108 9.10266C6.42203 9.5599 6.64652 9.97991 6.97618 10.3096C7.30583 10.6392 7.72583 10.8637 8.18307 10.9547C8.64031 11.0456 9.11426 10.9989 9.54497 10.8205C9.97568 10.6421 10.3438 10.34 10.6028 9.95237C10.8618 9.56474 11.0001 9.10901 11.0001 8.64281C10.9994 8.01785 10.7509 7.41866 10.309 6.97674C9.86708 6.53483 9.26789 6.28629 8.64293 6.28566Z"
+                                fill="currentCollor" />
+                              <path
+                                d="M8.64287 22L2.01458 14.1829C1.92248 14.0656 1.83133 13.9474 1.74115 13.8286C0.608922 12.3371 -0.00273522 10.5154 9.19512e-06 8.64286C9.19512e-06 6.35063 0.910594 4.15228 2.53144 2.53143C4.15229 0.910584 6.35064 0 8.64287 0C10.9351 0 13.1334 0.910584 14.7543 2.53143C16.3751 4.15228 17.2857 6.35063 17.2857 8.64286C17.2885 10.5145 16.6771 12.3354 15.5454 13.8262L15.5446 13.8286C15.5446 13.8286 15.3089 14.1381 15.2735 14.1798L8.64287 22ZM2.99594 12.8818C2.99594 12.8818 3.17901 13.1238 3.22065 13.1756L8.64287 19.5706L14.0722 13.167C14.1067 13.1238 14.2906 12.8802 14.2914 12.8794C15.2163 11.6609 15.7161 10.1727 15.7143 8.64286C15.7143 6.7674 14.9693 4.96875 13.6431 3.6426C12.317 2.31645 10.5183 1.57143 8.64287 1.57143C6.76741 1.57143 4.96876 2.31645 3.64261 3.6426C2.31646 4.96875 1.57144 6.7674 1.57144 8.64286C1.56979 10.1736 2.07019 11.6627 2.99594 12.8818Z"
+                                fill="currentCollor" />
+                            </svg>
+                          </span>
+                          <span>
+                            Spain
+                          </span>
+                        </button>
+                        <button class="investors__list-button">
+                          <span class="ico">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M14.36 12C14.44 11.34 14.5 10.68 14.5 10C14.5 9.32 14.44 8.66 14.36 8H17.74C17.9 8.64 18 9.31 18 10C18 10.69 17.9 11.36 17.74 12M12.59 17.56C13.19 16.45 13.65 15.25 13.97 14H16.92C15.9512 15.6683 14.4141 16.932 12.59 17.56ZM12.34 12H7.66C7.56 11.34 7.5 10.68 7.5 10C7.5 9.32 7.56 8.65 7.66 8H12.34C12.43 8.65 12.5 9.32 12.5 10C12.5 10.68 12.43 11.34 12.34 12ZM10 17.96C9.17 16.76 8.5 15.43 8.09 14H11.91C11.5 15.43 10.83 16.76 10 17.96ZM6 6H3.08C4.03886 4.32721 5.5748 3.06149 7.4 2.44C6.8 3.55 6.35 4.75 6 6ZM3.08 14H6C6.35 15.25 6.8 16.45 7.4 17.56C5.57862 16.9317 4.04485 15.6677 3.08 14ZM2.26 12C2.1 11.36 2 10.69 2 10C2 9.31 2.1 8.64 2.26 8H5.64C5.56 8.66 5.5 9.32 5.5 10C5.5 10.68 5.56 11.34 5.64 12M10 2.03C10.83 3.23 11.5 4.57 11.91 6H8.09C8.5 4.57 9.17 3.23 10 2.03ZM16.92 6H13.97C13.657 4.76146 13.1936 3.5659 12.59 2.44C14.43 3.07 15.96 4.34 16.92 6ZM10 0C4.47 0 0 4.5 0 10C0 12.6522 1.05357 15.1957 2.92893 17.0711C3.85752 17.9997 4.95991 18.7362 6.17317 19.2388C7.38642 19.7413 8.68678 20 10 20C12.6522 20 15.1957 18.9464 17.0711 17.0711C18.9464 15.1957 20 12.6522 20 10C20 8.68678 19.7413 7.38642 19.2388 6.17317C18.7362 4.95991 17.9997 3.85752 17.0711 2.92893C16.1425 2.00035 15.0401 1.26375 13.8268 0.761205C12.6136 0.258658 11.3132 0 10 0Z"
+                                fill="currentCollor" />
+                            </svg>
+                          </span>
+                          <span>
+                            backme@jme.vc
+                          </span>
+                        </button>
+                        <button class="investors__list-button">
+                          <span class="ico">
+                            <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M18 4C18.58 4 19.05 4.2 19.42 4.59C19.8 5 20 5.45 20 6V17C20 17.55 19.8 18 19.42 18.41C19.05 18.8 18.58 19 18 19H2C1.42 19 0.95 18.8 0.58 18.41C0.2 18 0 17.55 0 17V6C0 5.45 0.2 5 0.58 4.59C0.95 4.2 1.42 4 2 4H6V2C6 1.42 6.2 0.95 6.58 0.58C6.95 0.2 7.42 0 8 0H12C12.58 0 13.05 0.2 13.42 0.58C13.8 0.95 14 1.42 14 2V4H18ZM2 6V17H18V6H2ZM12 4V2H8V4H12Z"
+                                fill="currentCollor" />
+                            </svg>
+                          </span>
+                          <span>
+                            Venture Capital
+                          </span>
+                        </button>
+                      </div>
+                      <div class="investors__info-text">
+                        <strong>
+                          Invested startups:
+                        </strong>
+                        <span>
+                          Ida, MarketLeap, Verteego
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="investors__list-tab">
+                    <div class="investors__list-row tabBtn" data-tab="#tab-3">
+                      <div class="investors__list-column">
+                        <strong>
+                          3
+                        </strong>
+                      </div>
+                      <div class="investors__list-column">
+                        <strong>
+                          BStartup
+                        </strong>
+                      </div>
+                      <div class="investors__list-column">
+                        <span class="investors__list-text _lg">
+                          98
+                        </span>
+                      </div>
+                      <div class="investors__list-column">
+                        <span class="investors__list-text _blue">
+                          Industria
+                        </span>
+                        <span class="investors__list-text _yellow">
+                          País
+                        </span>
+                        <span class="investors__list-text _blueDark">
+                          Ticket
+                        </span>
+                      </div>
+                      <div class="investors__list-column">
+                        19-12-2023
+                      </div>
+                      <div class="investors__list-column">
+                        <button class="button button--ico">
+                          <span class="ico">
+                            <svg width="27" height="26" viewBox="0 0 27 26" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M7.87403 22.203L13.5009 18.7643L19.1278 22.2482L17.6541 15.7328L22.6111 11.3893L16.091 10.8011L13.5009 4.64764L10.9108 10.7558L4.39074 11.344L9.34774 15.7328L7.87403 22.203ZM5.14992 26L7.36494 16.3844L0 9.91967L9.70142 9.06905L13.5009 0L17.3004 9.06724L27 9.91786L19.6369 16.3826L21.8519 25.9982L13.5009 20.8945L5.14992 26Z"
+                                fill="currentCollor" />
+                            </svg>
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="investors__list-content tabEvent" id="tab-3">
+                      <div class="investors__list-box">
+                        <h2>
+                          BStartup
+                        </h2>
+                        <button class="button button--ico">
+                          <span class="ico">
+                            <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M23.7083 0.375C24.4819 0.375 25.2237 0.682291 25.7707 1.22927C26.3177 1.77625 26.625 2.51812 26.625 3.29167V23.7083C26.625 24.4819 26.3177 25.2237 25.7707 25.7707C25.2237 26.3177 24.4819 26.625 23.7083 26.625H3.29167C2.51812 26.625 1.77625 26.3177 1.22927 25.7707C0.682291 25.2237 0.375 24.4819 0.375 23.7083V3.29167C0.375 2.51812 0.682291 1.77625 1.22927 1.22927C1.77625 0.682291 2.51812 0.375 3.29167 0.375H23.7083ZM22.9792 22.9792V15.25C22.9792 13.9891 22.4783 12.7799 21.5867 11.8883C20.6951 10.9967 19.4859 10.4958 18.225 10.4958C16.9854 10.4958 15.5417 11.2542 14.8417 12.3917V10.7729H10.7729V22.9792H14.8417V15.7896C14.8417 14.6667 15.7458 13.7479 16.8688 13.7479C17.4102 13.7479 17.9295 13.963 18.3124 14.3459C18.6953 14.7288 18.9104 15.2481 18.9104 15.7896V22.9792H22.9792ZM6.03333 8.48333C6.68311 8.48333 7.30628 8.22521 7.76575 7.76575C8.22521 7.30628 8.48333 6.68311 8.48333 6.03333C8.48333 4.67708 7.38958 3.56875 6.03333 3.56875C5.37969 3.56875 4.75281 3.82841 4.29061 4.29061C3.82841 4.75281 3.56875 5.37969 3.56875 6.03333C3.56875 7.38958 4.67708 8.48333 6.03333 8.48333ZM8.06042 22.9792V10.7729H4.02083V22.9792H8.06042Z"
+                                fill="currentCollor" />
+                            </svg>
+                          </span>
+                        </button>
+                        <p>
+                          Kima Ventures focuses on late seed and series A of Spanish companies with a technological
+                          base.
+                        </p>
+                      </div>
+                      <div class="investors__list-group">
+                        <button class="investors__list-button">
+                          <span class="ico">
+                            <svg width="18" height="22" viewBox="0 0 18 22" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M8.64293 12.5714C7.86593 12.5714 7.10638 12.341 6.46033 11.9093C5.81428 11.4776 5.31075 10.8641 5.0134 10.1462C4.71606 9.42835 4.63826 8.63845 4.78984 7.87638C4.94143 7.11431 5.31559 6.41431 5.86501 5.86489C6.41443 5.31547 7.11443 4.94131 7.8765 4.78972C8.63857 4.63814 9.42848 4.71594 10.1463 5.01328C10.8642 5.31062 11.4777 5.81416 11.9094 6.46021C12.3411 7.10626 12.5715 7.86581 12.5715 8.64281C12.5703 9.68435 12.156 10.6829 11.4195 11.4193C10.683 12.1558 9.68447 12.5701 8.64293 12.5714ZM8.64293 6.28566C8.17673 6.28566 7.721 6.42391 7.33337 6.68291C6.94574 6.94192 6.64362 7.31006 6.46521 7.74077C6.28681 8.17148 6.24013 8.64542 6.33108 9.10266C6.42203 9.5599 6.64652 9.97991 6.97618 10.3096C7.30583 10.6392 7.72583 10.8637 8.18307 10.9547C8.64031 11.0456 9.11426 10.9989 9.54497 10.8205C9.97568 10.6421 10.3438 10.34 10.6028 9.95237C10.8618 9.56474 11.0001 9.10901 11.0001 8.64281C10.9994 8.01785 10.7509 7.41866 10.309 6.97674C9.86708 6.53483 9.26789 6.28629 8.64293 6.28566Z"
+                                fill="currentCollor" />
+                              <path
+                                d="M8.64287 22L2.01458 14.1829C1.92248 14.0656 1.83133 13.9474 1.74115 13.8286C0.608922 12.3371 -0.00273522 10.5154 9.19512e-06 8.64286C9.19512e-06 6.35063 0.910594 4.15228 2.53144 2.53143C4.15229 0.910584 6.35064 0 8.64287 0C10.9351 0 13.1334 0.910584 14.7543 2.53143C16.3751 4.15228 17.2857 6.35063 17.2857 8.64286C17.2885 10.5145 16.6771 12.3354 15.5454 13.8262L15.5446 13.8286C15.5446 13.8286 15.3089 14.1381 15.2735 14.1798L8.64287 22ZM2.99594 12.8818C2.99594 12.8818 3.17901 13.1238 3.22065 13.1756L8.64287 19.5706L14.0722 13.167C14.1067 13.1238 14.2906 12.8802 14.2914 12.8794C15.2163 11.6609 15.7161 10.1727 15.7143 8.64286C15.7143 6.7674 14.9693 4.96875 13.6431 3.6426C12.317 2.31645 10.5183 1.57143 8.64287 1.57143C6.76741 1.57143 4.96876 2.31645 3.64261 3.6426C2.31646 4.96875 1.57144 6.7674 1.57144 8.64286C1.56979 10.1736 2.07019 11.6627 2.99594 12.8818Z"
+                                fill="currentCollor" />
+                            </svg>
+                          </span>
+                          <span>
+                            Spain
+                          </span>
+                        </button>
+                        <button class="investors__list-button">
+                          <span class="ico">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M14.36 12C14.44 11.34 14.5 10.68 14.5 10C14.5 9.32 14.44 8.66 14.36 8H17.74C17.9 8.64 18 9.31 18 10C18 10.69 17.9 11.36 17.74 12M12.59 17.56C13.19 16.45 13.65 15.25 13.97 14H16.92C15.9512 15.6683 14.4141 16.932 12.59 17.56ZM12.34 12H7.66C7.56 11.34 7.5 10.68 7.5 10C7.5 9.32 7.56 8.65 7.66 8H12.34C12.43 8.65 12.5 9.32 12.5 10C12.5 10.68 12.43 11.34 12.34 12ZM10 17.96C9.17 16.76 8.5 15.43 8.09 14H11.91C11.5 15.43 10.83 16.76 10 17.96ZM6 6H3.08C4.03886 4.32721 5.5748 3.06149 7.4 2.44C6.8 3.55 6.35 4.75 6 6ZM3.08 14H6C6.35 15.25 6.8 16.45 7.4 17.56C5.57862 16.9317 4.04485 15.6677 3.08 14ZM2.26 12C2.1 11.36 2 10.69 2 10C2 9.31 2.1 8.64 2.26 8H5.64C5.56 8.66 5.5 9.32 5.5 10C5.5 10.68 5.56 11.34 5.64 12M10 2.03C10.83 3.23 11.5 4.57 11.91 6H8.09C8.5 4.57 9.17 3.23 10 2.03ZM16.92 6H13.97C13.657 4.76146 13.1936 3.5659 12.59 2.44C14.43 3.07 15.96 4.34 16.92 6ZM10 0C4.47 0 0 4.5 0 10C0 12.6522 1.05357 15.1957 2.92893 17.0711C3.85752 17.9997 4.95991 18.7362 6.17317 19.2388C7.38642 19.7413 8.68678 20 10 20C12.6522 20 15.1957 18.9464 17.0711 17.0711C18.9464 15.1957 20 12.6522 20 10C20 8.68678 19.7413 7.38642 19.2388 6.17317C18.7362 4.95991 17.9997 3.85752 17.0711 2.92893C16.1425 2.00035 15.0401 1.26375 13.8268 0.761205C12.6136 0.258658 11.3132 0 10 0Z"
+                                fill="currentCollor" />
+                            </svg>
+                          </span>
+                          <span>
+                            backme@jme.vc
+                          </span>
+                        </button>
+                        <button class="investors__list-button">
+                          <span class="ico">
+                            <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M18 4C18.58 4 19.05 4.2 19.42 4.59C19.8 5 20 5.45 20 6V17C20 17.55 19.8 18 19.42 18.41C19.05 18.8 18.58 19 18 19H2C1.42 19 0.95 18.8 0.58 18.41C0.2 18 0 17.55 0 17V6C0 5.45 0.2 5 0.58 4.59C0.95 4.2 1.42 4 2 4H6V2C6 1.42 6.2 0.95 6.58 0.58C6.95 0.2 7.42 0 8 0H12C12.58 0 13.05 0.2 13.42 0.58C13.8 0.95 14 1.42 14 2V4H18ZM2 6V17H18V6H2ZM12 4V2H8V4H12Z"
+                                fill="currentCollor" />
+                            </svg>
+                          </span>
+                          <span>
+                            Venture Capital
+                          </span>
+                        </button>
+                      </div>
+                      <div class="investors__info-text">
+                        <strong>
+                          Invested startups:
+                        </strong>
+                        <span>
+                          Ida, MarketLeap, Verteego
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="investors__list-tab">
+                    <div class="investors__list-row tabBtn" data-tab="#tab-4">
+                      <div class="investors__list-column">
+                        <strong>
+                          4
+                        </strong>
+                      </div>
+                      <div class="investors__list-column">
+                        <strong>
+                          ENISA
+                        </strong>
+                      </div>
+                      <div class="investors__list-column">
+                        <span class="investors__list-text _lg">
+                          98
+                        </span>
+                      </div>
+                      <div class="investors__list-column">
+                        <span class="investors__list-text _blue">
+                          Industria
+                        </span>
+                        <span class="investors__list-text _yellow">
+                          País
+                        </span>
+                        <span class="investors__list-text _blueDark">
+                          Ticket
+                        </span>
+                      </div>
+                      <div class="investors__list-column">
+                        19-12-2023
+                      </div>
+                      <div class="investors__list-column">
+                        <button class="button button--ico">
+                          <span class="ico">
+                            <svg width="27" height="26" viewBox="0 0 27 26" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M7.87403 22.203L13.5009 18.7643L19.1278 22.2482L17.6541 15.7328L22.6111 11.3893L16.091 10.8011L13.5009 4.64764L10.9108 10.7558L4.39074 11.344L9.34774 15.7328L7.87403 22.203ZM5.14992 26L7.36494 16.3844L0 9.91967L9.70142 9.06905L13.5009 0L17.3004 9.06724L27 9.91786L19.6369 16.3826L21.8519 25.9982L13.5009 20.8945L5.14992 26Z"
+                                fill="currentCollor" />
+                            </svg>
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="investors__list-content tabEvent" id="tab-4">
+                      <div class="investors__list-box">
+                        <h2>
+                          ENISA
+                        </h2>
+                        <button class="button button--ico">
+                          <span class="ico">
+                            <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M23.7083 0.375C24.4819 0.375 25.2237 0.682291 25.7707 1.22927C26.3177 1.77625 26.625 2.51812 26.625 3.29167V23.7083C26.625 24.4819 26.3177 25.2237 25.7707 25.7707C25.2237 26.3177 24.4819 26.625 23.7083 26.625H3.29167C2.51812 26.625 1.77625 26.3177 1.22927 25.7707C0.682291 25.2237 0.375 24.4819 0.375 23.7083V3.29167C0.375 2.51812 0.682291 1.77625 1.22927 1.22927C1.77625 0.682291 2.51812 0.375 3.29167 0.375H23.7083ZM22.9792 22.9792V15.25C22.9792 13.9891 22.4783 12.7799 21.5867 11.8883C20.6951 10.9967 19.4859 10.4958 18.225 10.4958C16.9854 10.4958 15.5417 11.2542 14.8417 12.3917V10.7729H10.7729V22.9792H14.8417V15.7896C14.8417 14.6667 15.7458 13.7479 16.8688 13.7479C17.4102 13.7479 17.9295 13.963 18.3124 14.3459C18.6953 14.7288 18.9104 15.2481 18.9104 15.7896V22.9792H22.9792ZM6.03333 8.48333C6.68311 8.48333 7.30628 8.22521 7.76575 7.76575C8.22521 7.30628 8.48333 6.68311 8.48333 6.03333C8.48333 4.67708 7.38958 3.56875 6.03333 3.56875C5.37969 3.56875 4.75281 3.82841 4.29061 4.29061C3.82841 4.75281 3.56875 5.37969 3.56875 6.03333C3.56875 7.38958 4.67708 8.48333 6.03333 8.48333ZM8.06042 22.9792V10.7729H4.02083V22.9792H8.06042Z"
+                                fill="currentCollor" />
+                            </svg>
+                          </span>
+                        </button>
+                        <p>
+                          Kima Ventures focuses on late seed and series A of Spanish companies with a technological
+                          base.
+                        </p>
+                      </div>
+                      <div class="investors__list-group">
+                        <button class="investors__list-button">
+                          <span class="ico">
+                            <svg width="18" height="22" viewBox="0 0 18 22" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M8.64293 12.5714C7.86593 12.5714 7.10638 12.341 6.46033 11.9093C5.81428 11.4776 5.31075 10.8641 5.0134 10.1462C4.71606 9.42835 4.63826 8.63845 4.78984 7.87638C4.94143 7.11431 5.31559 6.41431 5.86501 5.86489C6.41443 5.31547 7.11443 4.94131 7.8765 4.78972C8.63857 4.63814 9.42848 4.71594 10.1463 5.01328C10.8642 5.31062 11.4777 5.81416 11.9094 6.46021C12.3411 7.10626 12.5715 7.86581 12.5715 8.64281C12.5703 9.68435 12.156 10.6829 11.4195 11.4193C10.683 12.1558 9.68447 12.5701 8.64293 12.5714ZM8.64293 6.28566C8.17673 6.28566 7.721 6.42391 7.33337 6.68291C6.94574 6.94192 6.64362 7.31006 6.46521 7.74077C6.28681 8.17148 6.24013 8.64542 6.33108 9.10266C6.42203 9.5599 6.64652 9.97991 6.97618 10.3096C7.30583 10.6392 7.72583 10.8637 8.18307 10.9547C8.64031 11.0456 9.11426 10.9989 9.54497 10.8205C9.97568 10.6421 10.3438 10.34 10.6028 9.95237C10.8618 9.56474 11.0001 9.10901 11.0001 8.64281C10.9994 8.01785 10.7509 7.41866 10.309 6.97674C9.86708 6.53483 9.26789 6.28629 8.64293 6.28566Z"
+                                fill="currentCollor" />
+                              <path
+                                d="M8.64287 22L2.01458 14.1829C1.92248 14.0656 1.83133 13.9474 1.74115 13.8286C0.608922 12.3371 -0.00273522 10.5154 9.19512e-06 8.64286C9.19512e-06 6.35063 0.910594 4.15228 2.53144 2.53143C4.15229 0.910584 6.35064 0 8.64287 0C10.9351 0 13.1334 0.910584 14.7543 2.53143C16.3751 4.15228 17.2857 6.35063 17.2857 8.64286C17.2885 10.5145 16.6771 12.3354 15.5454 13.8262L15.5446 13.8286C15.5446 13.8286 15.3089 14.1381 15.2735 14.1798L8.64287 22ZM2.99594 12.8818C2.99594 12.8818 3.17901 13.1238 3.22065 13.1756L8.64287 19.5706L14.0722 13.167C14.1067 13.1238 14.2906 12.8802 14.2914 12.8794C15.2163 11.6609 15.7161 10.1727 15.7143 8.64286C15.7143 6.7674 14.9693 4.96875 13.6431 3.6426C12.317 2.31645 10.5183 1.57143 8.64287 1.57143C6.76741 1.57143 4.96876 2.31645 3.64261 3.6426C2.31646 4.96875 1.57144 6.7674 1.57144 8.64286C1.56979 10.1736 2.07019 11.6627 2.99594 12.8818Z"
+                                fill="currentCollor" />
+                            </svg>
+                          </span>
+                          <span>
+                            Spain
+                          </span>
+                        </button>
+                        <button class="investors__list-button">
+                          <span class="ico">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M14.36 12C14.44 11.34 14.5 10.68 14.5 10C14.5 9.32 14.44 8.66 14.36 8H17.74C17.9 8.64 18 9.31 18 10C18 10.69 17.9 11.36 17.74 12M12.59 17.56C13.19 16.45 13.65 15.25 13.97 14H16.92C15.9512 15.6683 14.4141 16.932 12.59 17.56ZM12.34 12H7.66C7.56 11.34 7.5 10.68 7.5 10C7.5 9.32 7.56 8.65 7.66 8H12.34C12.43 8.65 12.5 9.32 12.5 10C12.5 10.68 12.43 11.34 12.34 12ZM10 17.96C9.17 16.76 8.5 15.43 8.09 14H11.91C11.5 15.43 10.83 16.76 10 17.96ZM6 6H3.08C4.03886 4.32721 5.5748 3.06149 7.4 2.44C6.8 3.55 6.35 4.75 6 6ZM3.08 14H6C6.35 15.25 6.8 16.45 7.4 17.56C5.57862 16.9317 4.04485 15.6677 3.08 14ZM2.26 12C2.1 11.36 2 10.69 2 10C2 9.31 2.1 8.64 2.26 8H5.64C5.56 8.66 5.5 9.32 5.5 10C5.5 10.68 5.56 11.34 5.64 12M10 2.03C10.83 3.23 11.5 4.57 11.91 6H8.09C8.5 4.57 9.17 3.23 10 2.03ZM16.92 6H13.97C13.657 4.76146 13.1936 3.5659 12.59 2.44C14.43 3.07 15.96 4.34 16.92 6ZM10 0C4.47 0 0 4.5 0 10C0 12.6522 1.05357 15.1957 2.92893 17.0711C3.85752 17.9997 4.95991 18.7362 6.17317 19.2388C7.38642 19.7413 8.68678 20 10 20C12.6522 20 15.1957 18.9464 17.0711 17.0711C18.9464 15.1957 20 12.6522 20 10C20 8.68678 19.7413 7.38642 19.2388 6.17317C18.7362 4.95991 17.9997 3.85752 17.0711 2.92893C16.1425 2.00035 15.0401 1.26375 13.8268 0.761205C12.6136 0.258658 11.3132 0 10 0Z"
+                                fill="currentCollor" />
+                            </svg>
+                          </span>
+                          <span>
+                            backme@jme.vc
+                          </span>
+                        </button>
+                        <button class="investors__list-button">
+                          <span class="ico">
+                            <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M18 4C18.58 4 19.05 4.2 19.42 4.59C19.8 5 20 5.45 20 6V17C20 17.55 19.8 18 19.42 18.41C19.05 18.8 18.58 19 18 19H2C1.42 19 0.95 18.8 0.58 18.41C0.2 18 0 17.55 0 17V6C0 5.45 0.2 5 0.58 4.59C0.95 4.2 1.42 4 2 4H6V2C6 1.42 6.2 0.95 6.58 0.58C6.95 0.2 7.42 0 8 0H12C12.58 0 13.05 0.2 13.42 0.58C13.8 0.95 14 1.42 14 2V4H18ZM2 6V17H18V6H2ZM12 4V2H8V4H12Z"
+                                fill="currentCollor" />
+                            </svg>
+                          </span>
+                          <span>
+                            Venture Capital
+                          </span>
+                        </button>
+                      </div>
+                      <div class="investors__info-text">
+                        <strong>
+                          Invested startups:
+                        </strong>
+                        <span>
+                          Ida, MarketLeap, Verteego
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- #investors end -->
+    </div>
+    <!-- #wrapper end-->
+  </div>
+  <script src="js/main.js"></script>
+  <script src="js/customSelect.js"></script>
+</body>
+
+</html>

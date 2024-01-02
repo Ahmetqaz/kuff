@@ -1,5 +1,6 @@
 @media (max-width: 1280px) {
   @include container-1280;
+  @include layouts-1280;
 }
 @media (max-width: 1160px) {
   @include typography-1160;
@@ -19,6 +20,7 @@
 }
 @media (max-width: 768px) {
   @include container-768;
+  @include layouts-768;
 }
 @media (max-width: 580px) {
   @include typography-580;
