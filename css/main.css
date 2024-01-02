@@ -836,7 +836,7 @@ svg {
   height: 1px;
   position: absolute;
   left: 0;
-  bottom: -1px;
+  bottom: 0;
   background: currentColor;
 }
 
@@ -1563,8 +1563,11 @@ svg {
   max-width: 425px;
   min-height: 200px;
   margin: 0 auto;
-  border: 1px dashed #1b2d51;
   padding: 30px;
+  background-image: repeating-linear-gradient(-33deg, #1b2d51, #1b2d51 7px, transparent 7px, transparent 16px, #1b2d51 16px), repeating-linear-gradient(57deg, #1b2d51, #1b2d51 7px, transparent 7px, transparent 16px, #1b2d51 16px), repeating-linear-gradient(147deg, #1b2d51, #1b2d51 7px, transparent 7px, transparent 16px, #1b2d51 16px), repeating-linear-gradient(237deg, #1b2d51, #1b2d51 7px, transparent 7px, transparent 16px, #1b2d51 16px);
+  background-size: 1px 100%, 100% 1px, 1px 100%, 100% 1px;
+  background-position: 0 0, 0 0, 100% 0, 0 100%;
+  background-repeat: no-repeat;
 }
 .upload__file._column {
   -webkit-box-pack: start;
@@ -1637,8 +1640,10 @@ svg {
   gap: 6px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  line-height: 1.2;
 }
 .upload__group-box a {
+  line-height: inherit;
   color: inherit;
   font-size: inherit;
   font-weight: inherit;
@@ -1647,6 +1652,9 @@ svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 20px;
 }
 .upload__group .button--ico {

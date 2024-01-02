@@ -90,8 +90,42 @@
     max-width: 425px;
     min-height: 200px;
     margin: 0 auto;
-    border: 1px dashed $black-secondary;
     padding: 30px;
+    background-image: repeating-linear-gradient(
+        -33deg,
+        #1b2d51,
+        #1b2d51 7px,
+        transparent 7px,
+        transparent 16px,
+        #1b2d51 16px
+      ),
+      repeating-linear-gradient(
+        57deg,
+        #1b2d51,
+        #1b2d51 7px,
+        transparent 7px,
+        transparent 16px,
+        #1b2d51 16px
+      ),
+      repeating-linear-gradient(
+        147deg,
+        #1b2d51,
+        #1b2d51 7px,
+        transparent 7px,
+        transparent 16px,
+        #1b2d51 16px
+      ),
+      repeating-linear-gradient(
+        237deg,
+        #1b2d51,
+        #1b2d51 7px,
+        transparent 7px,
+        transparent 16px,
+        #1b2d51 16px
+      );
+    background-size: 1px 100%, 100% 1px, 1px 100%, 100% 1px;
+    background-position: 0 0, 0 0, 100% 0, 0 100%;
+    background-repeat: no-repeat;
     &._column {
       justify-content: flex-start;
       align-items: flex-start;
@@ -134,7 +168,9 @@
       justify-content: center;
       gap: 6px;
       flex-wrap: wrap;
+      line-height: 1.2;
       a {
+        line-height: inherit;
         color: inherit;
         font-size: inherit;
         font-weight: inherit;
@@ -142,6 +178,7 @@
     }
     &-buttons {
       display: flex;
+      align-items: center;
       gap: 20px;
     }
     .button {
