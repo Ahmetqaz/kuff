@@ -1564,7 +1564,7 @@ svg {
   min-height: 200px;
   margin: 0 auto;
   padding: 30px;
-  background-image: repeating-linear-gradient(-33deg, #1b2d51, #1b2d51 7px, transparent 7px, transparent 16px, #1b2d51 16px), repeating-linear-gradient(57deg, #1b2d51, #1b2d51 7px, transparent 7px, transparent 16px, #1b2d51 16px), repeating-linear-gradient(147deg, #1b2d51, #1b2d51 7px, transparent 7px, transparent 16px, #1b2d51 16px), repeating-linear-gradient(237deg, #1b2d51, #1b2d51 7px, transparent 7px, transparent 16px, #1b2d51 16px);
+  background-image: repeating-linear-gradient(-36deg, #1b2d51, #1b2d51 6px, transparent 6px, transparent 12px, #1b2d51 12px), repeating-linear-gradient(54deg, #1b2d51, #1b2d51 6px, transparent 6px, transparent 12px, #1b2d51 12px), repeating-linear-gradient(144deg, #1b2d51, #1b2d51 6px, transparent 6px, transparent 12px, #1b2d51 12px), repeating-linear-gradient(234deg, #1b2d51, #1b2d51 6px, transparent 6px, transparent 12px, #1b2d51 12px);
   background-size: 1px 100%, 100% 1px, 1px 100%, 100% 1px;
   background-position: 0 0, 0 0, 100% 0, 0 100%;
   background-repeat: no-repeat;
